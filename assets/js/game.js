@@ -12,10 +12,10 @@ function updateCountdown () {
     seconds = seconds < 2 ? '0' + seconds : seconds;
 
     countdownEl.innerHTML = `${time}`;
-    if (time == -1) {
+    if (time <= 0) {
+      
+        alert("Sorry! You're out of time!");
         clearInterval(countdownEl);
-        alert("Time out!! :(");
-
         window.location.href='../html/end.html'
     }
     time--;
