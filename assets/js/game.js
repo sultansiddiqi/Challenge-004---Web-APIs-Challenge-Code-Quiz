@@ -1,4 +1,4 @@
-const startingMinutes = .1;
+const startingMinutes = 2;
 let time = startingMinutes * 60;
 let seconds = time % 60;
 
