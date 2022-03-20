@@ -5,7 +5,7 @@ const mostRecentScore = localStorage.getItem('mostRecentScore')
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
-const MAX_HIGH_SCORES = 5
+const MAX_HIGH_SCORES = 10
 
 finalScore.innerText = mostRecentScore
 
@@ -30,7 +30,7 @@ saveHighScore = e => {
     highScores.splice(5)
 
     localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('https://sultansiddiqi.github.io/Challenge-004---Web-APIs-Challenge-Code-Quiz/assets/html/highscores.html')
+    window.location.assign('../../index.html')
 
     
 }
